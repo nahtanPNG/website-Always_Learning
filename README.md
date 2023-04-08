@@ -19,7 +19,7 @@
   <img align="center" alt="Git" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" />
   
 
-# References
+# Referências
 
 <a href="https://www.figma.com/file/JfnSmHNemEyXhpbknzH3Ok/Site-curso?node-id=1%3A2&t=lY7yAEC6k38uIdbE-1"> ● Prototipo no Figma</a>
 
