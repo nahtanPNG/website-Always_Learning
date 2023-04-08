@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #865DFF;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+html, body{
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+/*              Menu              */
+
+.navbar{
+    width: 100%;
+    height: 8vh;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    background-color: #f8f9fa;
+}
+
+.menu_esquerda{
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+    align-items: center;
+}
+.menu_esquerda img{
+    width: 8vw;
+}
+
+.menu_esquerda a{
+    text-decoration: none;
+    color: #865DFF;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.menu_direita{
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    align-items: center;
+    margin-right: 1vw;
+}
+
+.menu_direita a{
+    text-decoration: none;
+    color: #865DFF;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.btn_cadastrar{
+    background-color: #865DFF;
+    border: none;
+    padding: 0.5vh 1.5vw;
+    font-size: 1vw;
+    color: white;
+    cursor: pointer;
+}
+
+.btn_cadastrar:hover{
+    transition: ease-in-out 0.25s;
+    background-color: white;
+    color: #865DFF;
+}
+
+/*              Banner               */
+
+.bootcamp{
+    width: 100%;
+}
+
+.anuncio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.informacoes_banner{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vw;
+    background-color: #f8f9fa;
+    margin-top: 42vh;
+    padding: 3vh 5vw;
+}
+
+.informacoes_banner span{
+    background: #191825;
+    border-radius: 20px;
+    height: 4vh;
+    width: 0.1vw;
+}
+
+.informacao{
+    display: flex;
+    flex-direction: row;
+}
+
+.informacao div{
+    margin-left: 1.5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Quem somos nós */
+
+.sobre{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+.card_container{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_container h1{
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+.cards{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10vw;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7vh 4vw;
+    background: #ffffff;
+    box-shadow: 0px 5px 0px #865DFF;
+    border-radius: 25px;
+    transition: ease-in-out 0.5s;
+}
+
+.card:hover{
+    box-shadow: 0px 10px 0px #865DFF;
+    transition: ease-in-out 0.5s;
+}
+
+.quem_somos{
+    margin-top: 15vh;
+    width: 80vw;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quem_somostxt{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quem_somostxt span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quem_somostxt span img{
+    width: 4vw;
+}
+
+.quem_somostxt h2{
+    font-size: 2vw;
+}
+
+.quem_somostxt p{
+    width: 40vw;
+    margin-left: 4vw;
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+
+.foguete img{
+    margin-top: 15vh;
+    width: 20vw;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 30vh;
+    background-color: #865DFF;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.2vw;
+    color: white;
+    font-weight: 300;
+}
+
+footer div{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

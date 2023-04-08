@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Always Learning</title>
 </head>
@@ -18,30 +18,41 @@
             <div class="menu_direita">
                 <a href="login.php">Login</a>
                 <a href="cadastrar.php">
-                    <input type="button" value="Cadastrar">
+                    <input class="btn_cadastrar" type="button" value="Cadastrar">
                 </a>
             </div>
         </nav>
     </div>
 
     <div class="anuncio">
-        <img src="assets/JavaScriptBootcamp.png" alt="Banner com bootcamp de JavaScript">
-        <div class="informações_banner">
+        <img class="bootcamp" src="assets/JavaScriptBootcamp.png" alt="Banner com bootcamp de JavaScript">
+        <div class="informacoes_banner">
             <div class="informacao">
                 <img src="assets/icon_hourglass_.png" alt="Ampulheta">
-                <p class="descricao_cima">Duração</p>
-                <p class="descricao_baixo">2 Horas</p>
+                <div>
+                    <p class="descricao_cima">Duração</p>
+                    <p class="descricao_baixo">2 Horas</p> 
+                </div>
             </div>
+            <span></span>
+
             <div class="informacao">
-                <img src="assets/Vector.png" alt="Ampulheta">
-                <p class="descricao_cima">Valor</p>
-                <p class="descricao_baixo">Gratuito</p>
+                <img src="assets/Vector.png" alt="carteira">
+                <div>
+                    <p class="descricao_cima">Valor</p> 
+                    <p class="descricao_baixo">Gratuito</p>
+                </div>     
             </div>
+            <span></span>
+
             <div class="informacao">
-                <img src="assets/icon_layers_.png" alt="Ampulheta">
-                <p class="descricao_cima">Visão Geral</p>
-                <p class="descricao_baixo">5 Cursos</p>
+                <img src="assets/icon_layers_.png" alt="camada">
+                <div>
+                    <p class="descricao_cima">Visão Geral</p>
+                    <p class="descricao_baixo">5 Cursos</p>
+                </div>
             </div>
+
         </div>
     </div>
 
@@ -84,11 +95,16 @@
     <footer>
         <p>©Nathan Ferreira</p>
         <div>
-            <img src="assets/icon_social_linkedin_.png" alt="icone linkedin">
-            <img src="assets/icon_github_.png" alt="icone github">
+            <a href="https://www.linkedin.com/in/nathan-ferreira-121545241/">
+                <img src="assets/icon_social_linkedin_.png" alt="icone linkedin" >  
+            </a>
+            <a href="https://github.com/nahtanPNG">
+                <img src="assets/icon_github_.png" alt="icone github">
+            </a>
+           
         </div>
 
     </footer>
-
+<script src="src/js/script.js"></script>
 </body>
 </html>
