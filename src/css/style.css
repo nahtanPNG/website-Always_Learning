@@ -30,7 +30,10 @@ html, body{
 
 .navbar{
     width: 100%;
-    height: 8vh;
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu{
@@ -40,45 +43,49 @@ html, body{
     width: 100%;
     position: fixed;
     background-color: #f8f9fa;
+    top: 0;
+    z-index: 99;
 }
 
 .menu_esquerda{
     display: flex;
     justify-content: space-between;
-    gap: 10vw;
     align-items: center;
+    width: 28vw;
+    margin-left: 2vw;
 }
+
 .menu_esquerda img{
-    width: 8vw;
+    width: 10vw;
 }
 
 .menu_esquerda a{
     text-decoration: none;
     color: #865DFF;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 .menu_direita{
     display: flex;
     justify-content: space-between;
-    gap: 2vw;
     align-items: center;
-    margin-right: 1vw;
+    width: 18vw;
+    margin-right: 3vw;
 }
 
 .menu_direita a{
     text-decoration: none;
     color: #865DFF;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 .btn_cadastrar{
     background-color: #865DFF;
     border: none;
-    padding: 0.5vh 1.5vw;
-    font-size: 1vw;
+    padding: 0.8vh 1.5vw;
+    font-size: 1.5vw;
     color: white;
     cursor: pointer;
 }
@@ -97,8 +104,9 @@ html, body{
 
 .anuncio{
     width: 100%;
+    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content:end;
     align-items: center;
     flex-direction: column;
 }
@@ -108,28 +116,40 @@ html, body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 40vw;
     background-color: #f8f9fa;
-    margin-top: 42vh;
-    padding: 3vh 5vw;
+    padding: 1.5vh 5vw;
 }
 
 .informacoes_banner span{
     background: #191825;
     border-radius: 20px;
-    height: 4vh;
-    width: 0.1vw;
+    height: 3vw;
+    width: 0.15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .informacao{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacao img{
+    width: 2.5vw;
 }
 
 .informacao div{
     margin-left: 1.5vw;
     display: flex;
     flex-direction: column;
+}
+
+.informacao div p{
+    font-size: 1.2vw;
 }
 
 /* Quem somos nós */
@@ -140,29 +160,31 @@ html, body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 15vh;
+    height: 80vw;
+    margin-top: 8vw;
 }
 
 .card_container{
-    height: 30vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .card_container h1{
     font-weight: 400;
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 
 .cards{
-    margin-top: 10vh;
+    margin-top: 6vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 10vw;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    width: 100%;
 }
 
 .card{
@@ -170,22 +192,34 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 7vh 4vw;
+    width: 25vw;
+    height: 15vw;
     background: #ffffff;
-    box-shadow: 0px 5px 0px #865DFF;
-    border-radius: 25px;
+    box-shadow: 0 0.5vw 0 #865DFF;
+    border-radius: 1vw;
     transition: ease-in-out 0.5s;
 }
 
 .card:hover{
-    box-shadow: 0px 10px 0px #865DFF;
+    width: 25.5vw;
+    height: 15.5vw;
+    box-shadow: 0 0.7vw 0 #865DFF;
     transition: ease-in-out 0.5s;
 }
 
+.card img{
+    width: 4vw;
+}
+
+.card p{
+    font-size: 2vw;
+    margin-top: 2vh;
+}
+
 .quem_somos{
-    margin-top: 15vh;
-    width: 80vw;
-    height: 50%;
+    width: 90vw;
+    margin-top: 5vw;
+    margin-bottom: 15vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -196,6 +230,7 @@ html, body{
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .quem_somostxt span{
@@ -205,49 +240,154 @@ html, body{
 }
 
 .quem_somostxt span img{
-    width: 4vw;
+    width: 5vw;
 }
 
 .quem_somostxt h2{
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .quem_somostxt p{
-    width: 40vw;
-    margin-left: 4vw;
-    font-size: 1.5vw;
+    width: 50vw;
+    margin-left: 5vw;
+    font-size: 2vw;
     text-align: justify;
 }
 
+.foguete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
 
 .foguete img{
-    margin-top: 15vh;
     width: 20vw;
+    margin-top: 10vh;
+}
+
+/* CURSOS - Textos */
+
+.cursos_textos {
+    width: 100%;
+    height: 18vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cursos_textos h2{
+    font-size: 2.5vw;
+    margin-left: 5vw;
+}
+
+.cursos_textos p{
+    font-size: 2vw;
+    margin-left: 5vw;
+    margin-top: 1vh;
+}
+
+/* CURSOS - Curso */
+
+.cursos_background{
+    height: 25vw;
+    width: 100%;
+    background: linear-gradient(180deg, #865DFF 0%, #E384FF 100%);
+    display: flex;
+    align-items: center;
+}
+
+.cursos_background .curso {
+    width: 25vw;
+    margin-left: 8vw;
+}
+
+.cursos_background .curso p{
+    font-size: 2vw;
+    color: #ffffff;
+    margin-bottom: 2vh;
+}
+
+.cursos_background .curso .curso_container{
+    width: 14.5vw;
+    height: 18vw;
+    background-color: #ffffff;
+    border-radius: 1vw;
+}
+
+.cursos_background .curso .curso_container img{
+    width: 14.5vw;
+}
+
+.cursos_background .curso .curso_container .js_icon{
+    width: 5vw;
+    position: absolute;
+    margin-top: -5vw;
+}
+
+.cursos_background .curso .curso_container p{
+    color: #191825;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin: 2.5vw 0 0.5vh 0.5vw;
+}
+
+.cursos_background .curso .curso_container .curso_stars{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5vw;
+}
+
+.cursos_background .curso .curso_container .curso_stars img{
+    width: 1.2vw;
+}
+
+.curso_stars img:not(:last-child){
+    margin-right: 0.2vw;
+}
+
+/* PREPARANDO CURSOS */
+
+.preparando_cursos{
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+}
+
+.preparando_cursos h2{
+    font-size: 2.2vw;
+    margin-top: 5vh;
 }
 
 /* FOOTER */
 
 footer{
-    margin-top: 30vh;
     background-color: #865DFF;
-    height: 25vh;
+    padding: 2.2vh 0;
+    width: 100%;
+    position: static;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    bottom: 0;
 }
 
 footer p {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     color: white;
     font-weight: 300;
 }
 
 footer div{
-    margin-top: 2vh;
+    margin-top: 1.5vh;
     display: flex;
     justify-content: space-between;
     gap: 2vw;
+}
+
+footer div img {
+    width: 2.8vw;
 }
 
 
