@@ -152,7 +152,11 @@ html, body{
     font-size: 1.2vw;
 }
 
+<<<<<<< HEAD
 /* QUEM SOMOS NÓS - index.html */
+=======
+/* Quem somos nós */
+>>>>>>> 0e7fa07acdf978baeb1df41fa0c2d85eb27a7bde
 
 .sobre{
     width: 100%;
@@ -259,6 +263,107 @@ html, body{
     justify-content: center;
     align-items: center;
     width: 30vw;
+<<<<<<< HEAD
+=======
+}
+
+.foguete img{
+    width: 20vw;
+    margin-top: 10vh;
+}
+
+/* CURSOS - Textos */
+
+.cursos_textos {
+    width: 100%;
+    height: 18vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cursos_textos h2{
+    font-size: 2.5vw;
+    margin-left: 5vw;
+}
+
+.cursos_textos p{
+    font-size: 2vw;
+    margin-left: 5vw;
+    margin-top: 1vh;
+}
+
+/* CURSOS - Curso */
+
+.cursos_background{
+    height: 25vw;
+    width: 100%;
+    background: linear-gradient(180deg, #865DFF 0%, #E384FF 100%);
+    display: flex;
+    align-items: center;
+}
+
+.cursos_background .curso {
+    width: 25vw;
+    margin-left: 8vw;
+}
+
+.cursos_background .curso p{
+    font-size: 2vw;
+    color: #ffffff;
+    margin-bottom: 2vh;
+}
+
+.cursos_background .curso .curso_container{
+    width: 14.5vw;
+    height: 18vw;
+    background-color: #ffffff;
+    border-radius: 1vw;
+}
+
+.cursos_background .curso .curso_container img{
+    width: 14.5vw;
+}
+
+.cursos_background .curso .curso_container .js_icon{
+    width: 5vw;
+    position: absolute;
+    margin-top: -5vw;
+}
+
+.cursos_background .curso .curso_container p{
+    color: #191825;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin: 2.5vw 0 0.5vh 0.5vw;
+}
+
+.cursos_background .curso .curso_container .curso_stars{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5vw;
+}
+
+.cursos_background .curso .curso_container .curso_stars img{
+    width: 1.2vw;
+}
+
+.curso_stars img:not(:last-child){
+    margin-right: 0.2vw;
+}
+
+/* PREPARANDO CURSOS */
+
+.preparando_cursos{
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+}
+
+.preparando_cursos h2{
+    font-size: 2.2vw;
+    margin-top: 5vh;
+>>>>>>> 0e7fa07acdf978baeb1df41fa0c2d85eb27a7bde
 }
 
 .foguete img{
@@ -438,4 +543,23 @@ footer div{
 
 footer div img {
     width: 2.8vw;
+<<<<<<< HEAD
 }
+=======
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 0e7fa07acdf978baeb1df41fa0c2d85eb27a7bde
