@@ -409,6 +409,78 @@ html, body{
     flex-direction: column;
 }
 
+/* TELA DE Login */
+.telaLogin{
+    display: flex;
+    flex-direction: row;
+}
+
+.telaLogin img{
+    width: 40vw;
+}
+.loginOuCadastro a{
+    color: #191825;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+    text-decoration: none;
+}
+.titulocadastrar{
+    color: #191825;
+    margin-bottom: 2vw;
+}
+.form{
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form input{
+    width: 20vw;
+    height: 3vw;
+
+}
+
+.btnCad{
+    background-color: #865DFF;
+    border: none;
+    padding: 0.8vh 1.5vw;
+    font-size: 1.5vw;
+    color: white;
+    cursor: pointer;
+}
+
+.btnCad:hover{
+    background-color: #ffffff;
+    color:#865DFF;
+    transition: ease-in-out 0.25s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER - GERAL */
 
 footer{
