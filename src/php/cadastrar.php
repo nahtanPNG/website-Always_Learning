@@ -67,7 +67,7 @@ if($btnCadUsuario){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Always Learning - Login</title>
+    <title>Always Learning - Cadastrar</title>
 </head>
 <body>
 

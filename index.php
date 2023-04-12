@@ -23,7 +23,7 @@
     <img src="assets/imagem_login.png" alt="pessoa usando computador">
     <form class="form" type="text" method="post" action="src/php/valida.php">
         <h1 class="titulocadastrar">Login</h1>  
-        <input type="text" name="usuario" placeholder="Digite o seu usáario"><br>
+        <input type="text" name="usuario" placeholder="Digite o seu usuário"><br>
         <input type="password" name="senha" placeholder="Digite a sua senha"><br>
         <input type="submit" name="acessar" class="btnCad" value="Acessar"><br><br>
 

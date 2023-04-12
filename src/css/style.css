@@ -26,6 +26,10 @@ html, body{
     background-color: #f8f9fa;
 }
 
+h2{
+    font-weight: 400;
+}
+
 /* MENU - GERAL */
 
 .navbar{
@@ -264,6 +268,16 @@ html, body{
 .foguete img{
     width: 20vw;
     margin-top: 10vh;
+    animation: flutuar 5s ease-in-out infinite
+}
+
+@keyframes flutuar{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
 }
 
 /* CURSOS - cursos.html*/
@@ -282,7 +296,7 @@ html, body{
 }
 
 .cursos_textos p{
-    font-size: 2vw;
+    font-size: 1.8vw;
     margin-left: 5vw;
     margin-top: 1vh;
 }
@@ -362,13 +376,13 @@ html, body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    
-    
+    justify-content: center;
+    height: 90vw;
+    gap: 5vw;
 }
 
 .cursoJS_container .cursoJS_left{
-    width: 60vw;
-    padding: 4vw 6vw;
+    margin-top: 4vw;
 }
 
 .cursoJS_left_container {
@@ -378,35 +392,107 @@ html, body{
 }
 
 .cursoJS_left_container h2 {
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin-bottom: 1.5vw;
 }
 
 .cursoJS_left_container p{
-    font-size: 1.5vw;
-    width: 45vw;
+    font-size: 1.6vw;
+    width: 55vw;
 }
 
 .cursoJS_left_container img{
-    width: 45vw;
+    width: 55vw;
     margin: 2vw 0;
 }
 
 .cursoJS_left_container .topicos{
     width: 45vw;
     background-color: #EEEEEE;
-    height: 15vw;
+    height: 18vw;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-top: 2vw;
+    margin-top: 3vw;
 }
 
-.cursoJS_left_container .topicos .topicos_textos{
+.cursoJS_left_container .topicos h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+.cursoJS_left_container .topicos ul{
+    font-size: 1.8vw;
+    margin-left: 5vw;
+}
+
+.cursoJS_left_container .topicos ul li:not(:last-child){
+    margin-bottom: 0.8vw;
+}
+
+/* CURSO DIREITA - cursoJS.html */
+
+.cursoJS_container .cursoJS_right{
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.cursoJS_container .cursoJS_right .cardJS{
+    width: 20vw;
+    height: 25vw;
+    background: #FFFFFF;
+    box-shadow: 0px 0.5vw 1vw rgba(0, 0, 0, 0.25);
+    padding: 2vw 2.5vw;
+    margin-top: 4vw;
+}
+
+.cardJS .cardJSimg{
+    width: 7vw;
+    margin: 1vw 0 1vw 0;
+}
+
+.cardJS h3{
+    font-size: 1.8vw;
+    margin: 0 0 1vw 0;
+    font-weight: 400;
+}
+
+.cardJS .curso_stars{
+    margin: 0 0 3vw 0;
+    display: flex;
+    gap: 0.2vw;
+}
+
+.cardJS .curso_stars img{
+    width: 1.8vw;
+}
+
+.cardJS span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vw;
+    margin: 0 0 1.5vw 0;
+}
+
+.cardJS span img{
+    width: 2.2vw;
+}
+
+.cardJS span p{
+    font-size: 1.3vw;
+}
+
+.cardJS a button{
+    font-size: 1.4vw;
+    background-color: #865DFF;
+    width: 20vw;
+    margin: 0 0 0 0;
+    padding: 1vw;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 /* TELA DE Login */
@@ -417,6 +503,7 @@ html, body{
 
 .telaLogin img{
     width: 40vw;
+    animation: flutuar 5s ease-in-out infinite
 }
 .loginOuCadastro a{
     color: #191825;
@@ -457,6 +544,123 @@ html, body{
     color:#865DFF;
     transition: ease-in-out 0.25s;
 }
+
+/* Conteudo Cursos Java Script */
+
+.sobre_js{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.dom_div{
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dom_div p{
+    width: 70vw;
+    display: flex;
+    font-size: 1.2vw;
+}
+
+.dom_div h1{
+    color: #191825;
+    font-size: 2.2vw;
+    display: flex;
+    margin-right: auto;
+}
+
+.dom_div img{
+    margin-top: 5vw;
+    width: 35vw;
+}
+
+.historia_div{
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.historiatxt p{
+    width: 40vw;
+    margin-right: auto;
+    font-size: 1.2vw;
+}
+
+.historiatxt h1{
+    color: #191825;
+    font-size: 2.2vw;
+    display: flex;
+    margin-right: auto;
+}
+
+.brendan img{
+    width: 30vw;
+}
+
+.sintaxe_js{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vw;
+    background-color: #eeeeee;
+    width: 100%;
+}
+
+.sintaxe_js div{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sintaxe_js h1{
+    color: #191825;
+    font-size: 2.2vw;
+    display: flex;
+}
+
+.sintaxe_js p{
+    margin-top: 1.5vw;
+    width: 70vw;
+    display: flex;
+    font-size: 1.2vw;
+}
+
+.sintaxe_js img{
+    margin-top: 1.5vw;
+    margin-bottom: 2vw;
+    width: 40vw;
+}
+.provabtn{
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_realizar_prova{
+        background-color: #FFDB58;
+        border: none;
+        padding: 0.8vh 1.5vw;
+        font-size: 1.5vw;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+}
+
+.btn_realizar_prova:hover{
+    transition: ease-in-out 0.25s;
+    background-color: rgb(255, 172, 47);
+}  
+
+
 
 
 
