@@ -18,6 +18,12 @@
   <img align="center" alt="FIGMA" src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
   <img align="center" alt="Git" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" />
   
+ # Imagens
+ ![image](https://user-images.githubusercontent.com/93049899/231897239-0adbc25d-f674-491b-adfd-eb8421eb83a5.png)
+ ![image](https://user-images.githubusercontent.com/93049899/231897284-f5c2c27a-2681-48ad-82e5-712ca2db0678.png)
+ ![image](https://user-images.githubusercontent.com/93049899/231897358-f0690ff3-9a48-4017-920d-fa460495cc19.png)
+
+
 
 # Referências
 
