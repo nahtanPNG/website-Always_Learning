@@ -50,7 +50,7 @@ if($btnCadUsuario){
 		$resultado_usario = mysqli_query($sql, $result_usuario);
 		if(mysqli_insert_id($sql)){
 			$_SESSION['msgcad'] = "Usuário cadastrado com sucesso";
-			header("Location: ../../index.php");
+			header("Location: login.php");
 		}else{
 			$_SESSION['msg'] = "Erro ao cadastrar o usuário";
 		}
@@ -82,7 +82,7 @@ if($btnCadUsuario){
         <input type="submit" name="btnCadUsuario" class="btnCad" value="Cadastrar"><br><br>
 
         <div style="margin-top: 28px;">
-            Já possui uma conta?<a href="../../index.php">Clique aqui </a> para logar
+            Já possui uma conta?<a href="login.php">Clique aqui </a> para logar
         </div>
     </form>
 </div>

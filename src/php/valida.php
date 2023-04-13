@@ -16,19 +16,19 @@
                     $_SESSION['id'] = $row_usuario['id'];
                     $_SESSION['nome'] = $row_usuario['nome'];
                     $_SESSION['email'] = $row_usuario['email'];
-                    header("Location: ../../index.html");
+                    header("Location: ../../index.php");
                 }else{
                     $_SESSION['msg'] = "<texto>Senha incorreta</texto>";
-                    header("Location: ../../index.php");
+                    header("Location: ../php/login.php");
                 }
             }
         }else{
             $_SESSION['msg'] = "<texto>Usuário incorreto</texto>";
-            header("Location: ../../index.php");
+            header("Location: ../php/login.php");
         }
     }else{
         $_SESSION['msg'] = "<texto>Página não encontrada</texto>";
-        header("Location: ../../index.php");
+        header("Location: ../php/login.php");
     }
 
 ?>

@@ -6,31 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Always Learning - Login</title>
+    <title>Always Learning</title>
 </head>
 <body>
-    <?php
-        if(isset($_SESSION['msg'])){
-            echo $_SESSION['msg'];
-            unset($_SESSION['msg']);
-        }
-        if(isset($_SESSION['msgcad'])){
-            echo $_SESSION['msgcad'];
-            unset($_SESSION['msgcad']);
-        }
-    ?>
-<div class="telaLogin">
-    <img src="assets/imagem_login.png" alt="pessoa usando computador">
-    <form class="form" type="text" method="post" action="src/php/valida.php">
-        <h1 class="titulocadastrar">Login</h1>  
-        <input type="text" name="usuario" placeholder="Digite o seu usuário"><br>
-        <input type="password" name="senha" placeholder="Digite a sua senha"><br>
-        <input type="submit" name="acessar" class="btnCad" value="Acessar"><br><br>
+    <div class="navbar">
+        <nav class="menu">
+            <div class="menu_esquerda">
+                <a href="index.html" class="icon_home">
+                    <img src="assets/icon.png" alt="icone Always Learning" href="index.php">
+                </a>
+                <a href="cursos.html">Cursos</a>
+            </div>
+            <div class="menu_direita">
+                <a href="src/php/perfil.php">
+                    Perfil
+                </a>
+                <a href="src/php/sair.php">
+                    <input class="btn_cadastrar" type="button" value="Sair">
+                </a>
+            </div>
+        </nav>
+    </div>
 
-        <div style="margin-top: 28px;">
-            Não possui uma conta?<a href="src/php/cadastrar.php">Clique aqui </a> para logar
+    <div class="anuncio">
+        <div class="informacoes_banner">
+            <div class="informacao">
+                <img src="assets/ampulheta_icon.png" alt="Ampulheta">
+                <div>
+                    <p class="descricao_cima">Duração</p>
+                    <p class="descricao_baixo">2 Horas</p> 
+                </div>
+            </div>
+            <span></span>
+
+            <div class="informacao">
+                <img src="assets/carteira_icon.png" alt="carteira">
+                <div>
+                    <p class="descricao_cima">Valor</p> 
+                    <p class="descricao_baixo">Gratuito</p>
+                </div>     
+            </div>
+            <span></span>
+
+            <div class="informacao">
+                <img src="assets/camadas_icon.png" alt="camada">
+                <div>
+                    <p class="descricao_cima">Visão Geral</p>
+                    <p class="descricao_baixo">5 Cursos</p>
+                </div>
+            </div>
+
         </div>
-    </form>
-</div>
+        <img class="bootcamp" src="assets/JavaScriptBootcamp.png" alt="Banner com bootcamp de JavaScript">    
+    </div>
+
+    <section class="sobre">
+        <div class="card_container">
+            <h1 class="titulosobre">EXPANDA SEU <span style="color: #865DFF;">CONHECIMENTO</span> AQUI!</h1>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/icon_money_.png" alt="icone dinheiro">
+                    <p class="desc_card">Cursos Gratuitos</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icon_teacher_.png" alt="icone capelo">
+                    <p class="desc_card">Metodologia Eficiente</p>
+                </div>
+                <div class="card">
+                    <img src="assets/icon_teach.png" alt="icone professor">
+                    <p class="desc_card">Mentoria Ao Vivo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quem_somos">
+            <div class="quem_somostxt">
+                <span>
+                    <img src="assets/icon_escada.png" alt="escada">
+                    <h2>Quem nós somos</h2>
+                </span>
+                <p>
+                    Somos uma plataforma digital para cursos de tecnologia focados na sua evolução, buscamos sempre produzir cursos de alta qualidade e 100% gratuitos para você. Entre no maravilhoso mundo com a gente! Always Learning.
+                </p>
+            </div>
+            <div class="foguete">
+                <img src="assets/foguete.png" alt="foguete">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>©Nathan Ferreira</p>
+        <div>
+            <a href="https://www.linkedin.com/in/nathan-ferreira-121545241/">
+                <img src="assets/icon_social_linkedin_.png" alt="icone linkedin" >  
+            </a>
+            <a href="https://github.com/nahtanPNG">
+                <img src="assets/icon_github_.png" alt="icone github">
+            </a>
+           
+        </div>
+
+    </footer>
+<script src="src/js/script.js"></script>
 </body>
 </html>

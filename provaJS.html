@@ -5,26 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
     <title>Always Learning - Teste JavaScript</title>
 </head>
 <body>
     <div class="navbar">
         <nav class="menu">
             <div class="menu_esquerda">
-                <a href="index.html" class="icon_home">
+                <a href="index.php" class="icon_home">
                     <img src="assets/icon.png" alt="icone Always Learning" href="index.html">
                 </a>
                 <a href="cursos.html">Cursos</a>
             </div>
             <div class="menu_direita">
-                <a href="src/php/cadastrar.php">
-                    <input class="btn_cadastrar" type="button" value="Perfil">
+                <a href="src/php/perfil.php">
+                    Perfil
+                </a>
+                <a href="src/php/sair.php">
+                    <input class="btn_cadastrar" type="button" value="Sair">
                 </a>
             </div>
         </nav>
     </div>
 
+    <div class="tituloprova">
+        <h1>Prova JavaScript</h1>
+        <p>Responda 10 questões de multipla escolha baseada no curso escrito anterior</p>
+    </div>
+
+    <section class="perguntas">
+        <form action="src/php/salvar_prova.php" method="post">
+            <div class="p">
+                <h2>1 - O que é o DOM?</h2>
+                <input type="radio" name="p1" id="alternativa" value="a"> A) Uma representação em árvore dos elementos HTML em uma página web. <br>
+                <input type="radio" name="p1" id="alternativa" value="b"> B) Uma linguagem de programação. <br>
+                <input type="radio" name="p1" id="alternativa" value="c"> C) Uma plataforma de desenvolvimento web.
+            </div>
+            <div class="p">
+                <h2>2 - O que permite que o JavaScript interaja com os elementos HTML na página?</h2>
+                <input type="radio" name="p2" id="alternativa" value="a"> A) Os métodos e propriedades do JavaScript. <br>
+                <input type="radio" name="p2" id="alternativa" value="b"> B) A sintaxe básica do JavaScript. <br>
+                <input type="radio" name="p2" id="alternativa" value="c"> C) O DOM.
+            </div>
+            <div class="p">
+                <h2>3 - Como o JavaScript manipula o DOM?</h2>
+                <input type="radio" name="p3" id="alternativa" value="a"> A) Utilizando uma interface gráfica. <br>
+                <input type="radio" name="p3" id="alternativa" value="b"> B) Utilizando uma série de métodos e propriedades.<br>
+                <input type="radio" name="p3" id="alternativa" value="c"> C) Utilizando comandos de voz.
+            </div>
+            <div class="p">
+                <h2>4 - Quem criou o JavaScript?</h2>
+                <input type="radio" name="p4" id="alternativa" value="a"> A) Brendan Eich. <br>
+                <input type="radio" name="p4" id="alternativa" value="b"> B) Bill Gates. <br>
+                <input type="radio" name="p4" id="alternativa" value="c"> C) Steve Jobs.
+            </div>
+            <div class="p">
+                <h2>5 - Para qual navegador foi criado o JavaScript?</h2>
+                <input type="radio" name="p5" id="alternativa" value="a"> A) Google Chrome. <br>
+                <input type="radio" name="p5" id="alternativa" value="b"> B) Netscape Navigator. <br>
+                <input type="radio" name="p5" id="alternativa" value="c"> C) Mozilla Firefox.
+            </div>
+            <div class="p">
+                <h2>6 - Como era chamada a linguagem de script inicialmente criada por Brendan Eich?</h2>
+                <input type="radio" name="p6" id="alternativa" value="a"> A) Java. <br>
+                <input type="radio" name="p6" id="alternativa" value="b"> B) Mocha. <br>
+                <input type="radio" name="p6" id="alternativa" value="c"> C) Python.
+            </div>
+            <div class="p">
+                <h2>7 -  A sintaxe básica do JavaScript é rigorosa em relação à tipagem de dados?</h2>
+                <input type="radio" name="p7" id="alternativa" value="a"> A) Não, é uma sintaxe flexível <br>
+                <input type="radio" name="p7" id="alternativa" value="b"> B)  Sim, é uma sintaxe rigorosa. <br>
+                <input type="radio" name="p7" id="alternativa" value="c"> C) Depende do contexto.
+            </div>
+            <div class="p">
+                <h2>8 - Como as funções em JavaScript são definidas?</h2>
+                <input type="radio" name="p8" id="alternativa" value="a"> A) Utilizando a palavra-chave "let", seguida pelo nome da função e uma lista de argumentos entre colchetes. <br>
+                <input type="radio" name="p8" id="alternativa" value="b"> B) Utilizando a palavra-chave "variable", seguida pelo nome da função e uma lista de argumentos entre parênteses. <br>
+                <input type="radio" name="p8" id="alternativa" value="c"> C) Utilizando a palavra-chave "function", seguida pelo nome da função e uma lista de argumentos entre parênteses.
+            </div>
+            <div class="p">
+                <h2>9 - O que são argumentos em uma função JavaScript?</h2>
+                <input type="radio" name="p9" id="alternativa" value="a"> A) Valores que são passados para a função quando ela é chamada. <br>
+                <input type="radio" name="p9" id="alternativa" value="b"> B) Variáveis que são declaradas dentro da função. <br>
+                <input type="radio" name="p9" id="alternativa" value="c"> C) Funções aninhadas dentro da função principal.
+            </div>
+            <div class="p">
+                <h2>10 - As funções em JavaScript podem retornar valores?</h2>
+                <input type="radio" name="p10" id="alternativa" value="a"> A) Sim. <br>
+                <input type="radio" name="p10" id="alternativa" value="b"> B) Não. <br>
+                <input type="radio" name="p10" id="alternativa" value="c"> C) Depende do tipo de função.
+            </div>
+            <div class="provabtn">
+                <a href="src/php/salvar_prova.php">
+                    <input class="btn_realizar_prova" type="submit" value="Enviar Prova">
+                </a>
+            </div>
+        </form>
+    </section>
+
+    </div>
     
 </body>
 </html>

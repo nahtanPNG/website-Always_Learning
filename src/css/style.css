@@ -660,11 +660,63 @@ h2{
     background-color: rgb(255, 172, 47);
 }  
 
+/* Tela da prova */
+
+.tituloprova{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.perguntas{
+    margin-top: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.p{
+    background-color: #EEEEEE;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 20px;
+}
+
+.p h2, input{
+    margin-top: 0.5vw;
+    margin-left: 1.5vw;
+}
+
+#alternativa{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
 
 
+/* Tela de Respostas */
 
+.respostas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.p_r{
+    background-color: #EEEEEE;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 20px;
+    width: 40vw;
+    height: 8vw;
+}
 
+.p p{
+    margin-top: 1vw;
+    margin-left: 1.5vw;
+}
 
 
 
