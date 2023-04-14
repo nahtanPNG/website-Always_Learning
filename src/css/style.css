@@ -23,6 +23,7 @@
 
 html, body{
     width: 100%;
+    height: 100%;
     background-color: #f8f9fa;
 }
 
@@ -718,22 +719,98 @@ h2{
     margin-left: 1.5vw;
 }
 
+/* PERFIL */
 
+.container_perfil{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
 
+.sidebar{
+    background-color: #865DFF;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.sidebar .perfil_sidebar{
+    height: 14vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5vw;
+}
 
+.sidebar .perfil_sidebar img{
+    width: 10vw;
+    margin-bottom: 1.5vw;
+}
 
+.sidebar .perfil_sidebar .perfil_sidebar_texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
 
+.sidebar .perfil_sidebar .perfil_sidebar_texto p{
+    font-size: 1.4vw;
+    color: #FFFFFF;
+}
 
+.sidebar .perfil_sidebar .perfil_sidebar_texto p:not(:last-child){
+    margin-bottom: 0.5vw;
+}
 
+.sidebar a{
+    font-size: 1.2vw;
+    text-align: center;
+    width: 12vw;
+    padding: 1vw;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    color: #865DFF;
+    margin-bottom: 10vw;
+}
 
+.provas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+.provas .suas_provas{
+    margin: 4vw 6vw;
+}
 
+.provas .suas_provas h1{
+    font-size: 2.5vw;
+}
 
+.provas .suas_provas p{
+    font-size: 1.8vw;
+    background-color: #EEEEEE;
+    padding: 2vw;
+    border-radius: 1vw;
+    width: 40vw;
+    margin-top: 2vw;
+}
 
+/* Tabela de dados */
 
-
-
+.tabela_dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vw;
+}
 
 
 
